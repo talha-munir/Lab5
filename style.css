@@ -1,0 +1,130 @@
+@-webkit-keyframes barmove {
+    from { right: 100%  ;}
+    to {left: 0% ;}
+}
+
+@-webkit-keyframes bar1a {
+	0%   { top:0% ;left:100%}
+    25%  {	top:15%;left:75%;}
+    50%  {	top:30%;left:50%;}
+	75%  {	top:45%;left:25%;}
+	100% { top:60% ; left:0%;}
+}	
+@-webkit-keyframes bar2a {
+	0%   { top:100% ;left:100%}
+    25%  {	top:75%;left:75%;}
+    50%  {	top:40%;left:50%;}
+	75%  {	top:25%;left:25%;}
+	100% { top:10% ; left:0%;}
+}	
+@-webkit-keyframes bar3a {
+	0%   { top:50% ;left:100%}
+    25%  {	top:50%;left:75%;}
+    50%  {	top:50%;left:50%;}
+	75%  {	top:50%;left:25%;}
+	100% { top:50% ; left:0%;}
+}	
+@-webkit-keyframes bar4a {
+	0%   { top:30% ;left:100%}
+    25%  {	top:55%;left:75%;}
+    50%  {	top:60%;left:50%;}
+	75%  {	top:75%;left:25%;}
+	100% { top:90% ; left:0%;}
+}	
+
+
+#background-area{
+	position: relative;
+    top: 0px;
+    width: 100%; 
+    height: 100%;
+	background-image:url(2.jpg);
+	background-position: 0px 0px;
+    background-repeat: repeat-x-low;
+   animation-name: moving-area;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+}
+
+@-webkit-keyframes moving-area {
+    from { background-position: 0 0; }
+	to { background-position: -200% 0; }
+}
+.button{
+	position:absolute;
+	bottom:10%;
+	left:5%;0
+}
+body,html{
+height:100%;
+}
+
+#image{
+	position:absolute;
+	top:80px;
+}
+#bar1{
+	position: absolute;
+	
+	width:100%;
+	height:100%;
+	max-width: 70px;
+	max-height:70px;
+	background-size:100% 100%;
+	background-image: url("bird-2.png");
+	background-repeat: repeat-x;
+	transform : x ;
+	animation-delay: 2s;
+	animation : bar1a 5s linear infinite ;
+}
+
+#baR1:target
+#bar2{
+	position: absolute;
+	width:100%;
+	height:100%;
+	max-width: 70px;
+	max-height:70px;
+	background-size:100% 100%;
+	background-image: url("bird-2.png");	background-repeat: repeat-x;
+	transform : x ;
+	animation-delay: 5s;
+	animation : bar2a 8s linear infinite ;
+}
+#bar3{
+	position: absolute;
+width:100%;
+	height:100%;
+	max-width: 70px;
+	max-height:70px;
+	background-size:100% 100%;
+	background-image: url("bird-2.png");
+	background-repeat: repeat-x;
+	transform : x ;
+	animation-delay: 2s;
+	animation : bar3a 10s linear infinite ;
+
+}
+#bar4{
+	position: absolute;
+width:100%;
+	height:100%;
+	max-width: 70px;
+	max-height:70px;
+	background-size:100% 100%;
+	background-image: url("bird-2.png");
+	background-repeat: repeat-x;
+	transform : x ;
+	animation-delay: 3s;
+	animation : bar4a 13s linear infinite ;
+
+}
+
+
+.full_size{
+width:100%;
+height:100%;	
+	
+}
